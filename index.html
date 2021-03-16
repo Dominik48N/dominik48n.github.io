@@ -5,6 +5,9 @@
     <script src="redirect.js"></script>
 </head>
 <body onLoad="redirect();">
-<p>You will be redirected, please wait a moment...</p>
+<p id="message"></p>
+<script>
+    document.getElementById("message").innerHTML = getRedirectMessage();
+</script>
 </body>
 </html>
